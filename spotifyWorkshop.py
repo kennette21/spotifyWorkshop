@@ -1,17 +1,17 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-CLIENT_ID = 'c4ea3d3998de4b4282ad3bf37c3bd7c7'
-CLIENT_SECRET = 'd40ba4ca3ab44871af3bc6687dba0ba8'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
 
-TB_USER_ID = '1219021298'
+TB_USER_ID = ''
 
 client_credentials_manager = SpotifyClientCredentials(CLIENT_ID, CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 playlists = sp.user_playlists(TB_USER_ID)
 
-VIBRATIONS_IN_AIR_PL_ID = '0Lb3KCUka4ZBKLregYUrtH'
+VIBRATIONS_IN_AIR_PL_ID = ''
 
 vib_in_air_tracks = vib_tracks = sp.user_playlist_tracks(TB_USER_ID, playlist_id=VIBRATIONS_IN_AIR_PL_ID)
 album_ids = []
